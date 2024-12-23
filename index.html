@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script>
+    function login1() {
+        var a = document.form.email.value;
+        var b = document.form.password.value;
+        if (a === "khramswissal@gmail.com" && b === "1234") {
+            window.location.href = "./homme.html"; 
+        } else {
+            alert("Email et mot de passe incorrect");
+        }
+    }
+</script>
+<body>
+    <section>
+        <div class="content">
+            <h1>ARmsbook</h1>
+            <p>
+                Avec ARmsbook, partagez et restez en <br>
+                contact avec votre entourage.
+            </p>
+        </div>
+        
+        <div class="login">
+            <form name="form">
+                <input 
+                    class="info" 
+                    type="email" 
+                    name="email" 
+                    placeholder="Adresse e-mail ou numéro de tél" 
+                    required
+                >
+                <br>
+                <input 
+                    class="info ss" 
+                    type="password" 
+                    name="password" 
+                    placeholder="Mot de passe" 
+                    required
+                >
+                <br>
+                <button 
+                    class="connecter con" 
+                    type="button" 
+                    onclick="login1()"
+                >
+                    Se Connecter
+                </button>
+                <br><br>
+                <a href="#">Mot de passe oublié ?</a>
+                <br><br>
+                <hr>
+                <button class="créer" type="button">Créer nouveau compte</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
